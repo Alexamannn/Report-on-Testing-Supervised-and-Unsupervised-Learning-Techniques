@@ -11,7 +11,7 @@ points(dat$longitude[dat$ocean_proximity=="<1H OCEAN"], dat$latitude[dat$ocean_p
 #looking for expensive houses
 plot(dat$longitude,dat$latitude)
 summary(dat$median_house_value)
-points(dat$longitude[dat$median_house_value<=300000],dat$latitude[dat$median_house_value<=300000], col="red", pch=20)
+points(dat$longitude[dat$median_house_value>=300000],dat$latitude[dat$median_house_value>=300000], col="red", pch=20)
 
 # Linear Regression using LAT and LON
 plot(dat$latitude, dat$median_house_value)
